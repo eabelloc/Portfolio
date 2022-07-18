@@ -1,0 +1,114 @@
+/*-------DESKTOP-------*/
+/*-----GENERAL-----*/
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-image: url("./assets/Piano-Wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+
+h1 {
+    font-size: 15px;
+    text-align: center;
+    color: white;
+}
+
+img {
+    width: 100%;
+}
+
+/*-----GRID-----*/
+.grid {
+    display: grid;
+    height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1.7fr 0.7fr 0.3fr;
+    grid-template-areas:
+      "nav nav nav"
+      "personalcont personalcont personalcont"
+      "obras obras obras"
+      "transcripciones translista translista"
+      "footer footer footer";
+  
+    gap: 10px;
+  }
+
+.nav {
+    grid-area: nav;
+    background-color: rgb(0, 0, 0);
+}
+
+.mi-musica {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.mi-musica {
+    grid-area: mimusica;
+    background-color: rgb(0, 0, 0);
+}
+
+.texto-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.texto-1 {
+    grid-area: textouno;
+    background-color: rgb(0, 0, 0);
+}
+
+.inspiraciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.inspiraciones {
+    grid-area: inspiraciones;
+    background-color: rgb(0, 0, 0);
+}
+
+.obras {
+    grid-area: obras;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 5px;
+    justify-content: center;
+}
+
+.transcripciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.transcripciones {
+    grid-area: transcripciones;
+    background-color: rgb(0, 0, 0);
+}
+
+.transcript-list-container {
+    grid-area: translista;
+    background-color: rgb(0, 0, 0);
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(0, 0, 0);
+}
